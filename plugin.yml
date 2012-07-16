@@ -1,0 +1,7 @@
+name: MiniLuv
+main: to.joe.j2mc.miniluv.J2MC_MiniLuv
+version: 1.0
+depend: [Core]
+website: http://forums.joe.to
+author: J2 Minecraft Plugin Team
+description: Ministry of love
