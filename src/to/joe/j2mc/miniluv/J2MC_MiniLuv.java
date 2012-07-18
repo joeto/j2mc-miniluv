@@ -39,7 +39,7 @@ public class J2MC_MiniLuv extends JavaPlugin implements Listener {
                 this.sendAlert("Check out " + event.getPlayer().getName() + ", he is probably using spam hacks (nyancraft)");
             }
         }
-        if(event.getMessage().matches("^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$")) {
+        if(event.getMessage().matches("^(25[0-5]|2[0-4]\\d|[0-1]?\\d?\\d)(\\.(25[0-5]|2[0-4]\\d|[0-1]?\\d?\\d)){3}$")) {
             this.sendAlert(event.getPlayer().getName() + " just posted an ip in chat");
         }
     }
@@ -49,7 +49,7 @@ public class J2MC_MiniLuv extends JavaPlugin implements Listener {
     public void onSignChange(SignChangeEvent event) {
         String bad = null;
         for (final String line : event.getLines()) {
-            if (line.toLowerCase().contains("fag") || (line.toLowerCase().contains("nigg")) || line.matches("^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$")) {
+            if (line.toLowerCase().contains("fag") || (line.toLowerCase().contains("nigg")) || line.matches("^(25[0-5]|2[0-4]\\d|[0-1]?\\d?\\d)(\\.(25[0-5]|2[0-4]\\d|[0-1]?\\d?\\d)){3}$")) {
                 bad = line;
                 break;
             }
