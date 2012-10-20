@@ -40,7 +40,7 @@ public class J2MC_MiniLuv extends JavaPlugin implements Listener {
             }
         }
         if(event.getMessage().matches("^(25[0-5]|2[0-4]\\d|[0-1]?\\d?\\d)(\\.(25[0-5]|2[0-4]\\d|[0-1]?\\d?\\d)){3}$")) {
-            this.sendAlert(event.getPlayer().getName() + " just posted an ip in chat");
+            this.sendAlert(event.getPlayer().getName() + " just posted an ip in chat. Message: \"" + event.getMessage() + "\"");
         }
     }
     
